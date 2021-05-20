@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="viewPane" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.mainApp.res.layouts.staffView.AddServiceCharge">
+    <content>
+        <VBox fx:id="viewPaneChild" alignment="TOP_CENTER" spacing="10.0">
+            <children>
+                <Label fx:id="pageTitle" text="Add Service Charges">
+                    <font>
+                        <Font name="Monospaced Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <ImageView fitHeight="273.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/png/addMoney.png" />
+                    </image>
+                </ImageView>
+
+                <GridPane alignment="TOP_CENTER" hgap="10.0" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Booking Id" GridPane.rowIndex="1" />
+                        <Label text="Amount" GridPane.rowIndex="2" />
+                        <TextField fx:id="amount" promptText="Enter service charge" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Service Info" />
+                  <TextField fx:id="serviceInfo" promptText="Enter service details" GridPane.columnIndex="1" />
+                  <TextField fx:id="bookingId" promptText="Enter Customer's booking Id" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+
+                <Button fx:id="add" mnemonicParsing="false" onAction="#addServiceCharge" text="Add" />
+                <Separator prefWidth="200.0" />
+                <TextArea fx:id="status" prefHeight="200.0" prefWidth="200.0" promptText="Status">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin></TextArea>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding></VBox>
+    </content>
+</ScrollPane>

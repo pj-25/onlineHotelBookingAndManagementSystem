@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="viewPane" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.mainApp.res.layouts.customerView.corporateClientView.PayMonthlyBill">
+    <content>
+        <VBox fx:id="viewPaneChild" alignment="TOP_CENTER" prefWidth="500.0" spacing="10.0">
+            <children>
+                <Label fx:id="pageTitle" text="Pay Monthly Bills">
+                    <font>
+                        <Font name="Monospaced Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <ImageView fitHeight="273.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/png/accounting.png" />
+                    </image>
+                </ImageView>
+                <TableView fx:id="monthlyBillInfoTable" prefHeight="200.0" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn fx:id="column1" prefWidth="75.0" text="Bill Id" />
+                        <TableColumn fx:id="column2" prefWidth="100.0" text="Booking Id" />
+                        <TableColumn fx:id="column3" prefWidth="100.0" text="Amount" />
+                        <TableColumn fx:id="column4" prefWidth="100.0" text="Payment Status" />
+                    </columns>
+                    <placeholder>
+                        <Label text="No Monthly Pending Bills" />
+                    </placeholder>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_RIGHT" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="Total Amount:" />
+                  <Label fx:id="totalAmount" text="00.0">
+                     <font>
+                        <Font name="Monospaced Bold" size="24.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+                    <Button fx:id="payBtn" mnemonicParsing="false" onAction="#pay" text="Pay" />
+                <Separator layoutX="20.0" layoutY="608.0" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding></VBox>
+    </content>
+</ScrollPane>

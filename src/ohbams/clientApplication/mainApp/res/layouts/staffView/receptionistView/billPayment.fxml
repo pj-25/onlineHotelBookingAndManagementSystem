@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="viewPane" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.mainApp.res.layouts.staffView.receptionistView.BillPayment">
+    <content>
+        <VBox fx:id="viewPaneChild" alignment="TOP_CENTER" prefWidth="500.0" spacing="10.0">
+            <children>
+                <Label fx:id="pageTitle" text="Bill Payment">
+                    <font>
+                        <Font name="Monospaced Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <ImageView fitHeight="273.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/png/bill.png" />
+                    </image>
+                </ImageView>
+                <TableView fx:id="serviceChargeTable" prefHeight="200.0" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn fx:id="column1" prefWidth="75.0" text="Service charge Id" />
+                        <TableColumn fx:id="column2" prefWidth="100.0" text="ChargedBy Id" />
+                        <TableColumn fx:id="column3" prefWidth="100.0" text="Service Info" />
+                        <TableColumn fx:id="column4" prefWidth="100.0" text="Amount" />
+                        <TableColumn fx:id="column5" prefWidth="100.0" text="Charged On" />
+                    </columns>
+                    <placeholder>
+                        <Label text="No service charge data found" />
+                    </placeholder>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_RIGHT" layoutX="20.0" layoutY="585.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="Booking Id:" />
+                  <Label fx:id="bookingId" text="--">
+                     <font>
+                        <Font name="Monospaced Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+                <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" text="Total Amount:" />
+                        <Label fx:id="totalAmount" text="00.0">
+                            <font>
+                                <Font name="Monospaced Bold" size="24.0" />
+                            </font></Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Button fx:id="payedBtn" mnemonicParsing="false" onAction="#payed" text="Payed" />
+                <Separator layoutX="20.0" layoutY="608.0" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding></VBox>
+    </content>
+</ScrollPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+
+<TabPane fx:id="mainPane" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.userAuthentication.controller.AuthenticationController">
+  <tabs>
+    <Tab fx:id="loginTab" text="Login" />
+    <Tab fx:id="registerTab" text="Register" />
+  </tabs>
+</TabPane>

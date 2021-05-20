@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.userAuthentication.controller.RegisterController">
+   <content>
+      <StackPane>
+         <children>
+            <VBox alignment="CENTER" prefHeight="371.0" prefWidth="456.0" spacing="10.0" style="-fx-background-color: #434343;">
+               <children>
+                  <ImageView fitHeight="219.0" fitWidth="294.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/register.png" />
+                     </image>
+                  </ImageView>
+
+                  <Label id="pageTitle" text="Register" textFill="#03cd7f">
+                     <font>
+                        <Font name="Monospaced Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="TOP_CENTER" hgap="10.0" vgap="10.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    
+                     <children>
+                        <Label text="User Id" />
+                        <TextField fx:id="userId" GridPane.columnIndex="1" />
+                        <Label text="Create Password" GridPane.rowIndex="1" />
+                        <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Verify Password " GridPane.rowIndex="2" />
+                        <PasswordField fx:id="cpassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="First Name" GridPane.rowIndex="3" />
+                        <TextField fx:id="firstName" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Last Name" GridPane.rowIndex="4" />
+                        <TextField fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Age" GridPane.rowIndex="5" />
+                        <TextField fx:id="age" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Email ID" GridPane.rowIndex="7" />
+                        <TextField fx:id="emailId" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="Phone Number" GridPane.rowIndex="8" />
+                        <TextField fx:id="phoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label text="Gender" GridPane.rowIndex="6" />
+                        <HBox spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <children>
+                              <RadioButton fx:id="male" mnemonicParsing="false" text="M" />
+                              <RadioButton fx:id="female" mnemonicParsing="false" text="F" />
+                              <RadioButton fx:id="other" mnemonicParsing="false" text="Other" />
+                           </children>
+                        </HBox>
+                        <RadioButton fx:id="regularCustomer" mnemonicParsing="false" text="REGULAR_CUSTOMER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+                        <Label text="Credit Card Number" GridPane.rowIndex="11" />
+                        <TextField fx:id="creditCardNumber" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label layoutX="62.0" layoutY="359.0" text="Expiry Date" GridPane.rowIndex="12" />
+                        <DatePicker fx:id="cardExpiryDate" promptText="Card Expiry Date" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label text="Card Type" GridPane.rowIndex="13" />
+                        <TextField fx:id="cardType" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <RadioButton fx:id="corporateClient" mnemonicParsing="false" text="CORPORATE_CLIENT" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="14" />
+                        <Label text="Corporate Name" GridPane.rowIndex="15" />
+                        <TextField fx:id="corporateName" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                        <Label text="Role" GridPane.rowIndex="16" />
+                        <TextField fx:id="role" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                        <RadioButton fx:id="receptionist" mnemonicParsing="false" text="RECEPTIONIST" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="17" />
+                        <Label text="Reception Code" GridPane.rowIndex="18" />
+                        <TextField fx:id="receptionCode" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                        <RadioButton fx:id="barOrRestaurantStaff" mnemonicParsing="false" text="BAR_OR_RESTAURANT_STAFF" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="19" />
+                        <Label text="Select User Type and Enter corresponding data:" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                     </children>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#register" text="Register" />
+                  <Separator prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

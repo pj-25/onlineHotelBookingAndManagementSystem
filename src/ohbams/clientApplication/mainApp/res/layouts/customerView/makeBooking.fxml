@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="viewPane" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.mainApp.res.layouts.customerView.MakeBooking">
+    <content>
+        <VBox fx:id="viewPaneChild" alignment="TOP_CENTER" spacing="10.0">
+            <children>
+                <Label fx:id="pageTitle" text="Make Booking">
+                    <font>
+                        <Font name="Monospaced Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <ImageView fitHeight="273.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/png/003-online reservation.png" />
+                    </image>
+                </ImageView>
+            <StackPane fx:id="bookingInputPane" />
+                <Button fx:id="bookBtn" mnemonicParsing="false" onAction="#book" text="Book" />
+                <Separator prefWidth="200.0" />
+                <TextArea fx:id="bookingStatus" prefHeight="200.0" prefWidth="200.0" promptText="Booking Status">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin></TextArea>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding></VBox>
+    </content>
+</ScrollPane>

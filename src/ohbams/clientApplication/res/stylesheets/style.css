@@ -1,0 +1,26 @@
+#mainPane, #viewPane, #viewPaneChild {
+    -fx-background-color: #434343;
+    -fx-text-fill: white;
+}
+
+.menu-bar{
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.titled-pane .v-box{
+    -fx-background-color: blue;
+}
+
+.label ,.check-box, .radio-button{
+    -fx-text-fill: orange;
+}
+
+#pageTitle{
+    -fx-text-fill:#03cd7f;
+}

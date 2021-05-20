@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainPane" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.mainApp.res.layouts.Base">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Logout and Quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <TabPane fx:id="tabPane">
+         <tabs>
+            <Tab text="Welcome">
+               <content>
+                        <VBox id="viewPane" alignment="CENTER" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="425.0" fitWidth="463.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/png/017-five stars.png" />
+                                    </image>
+                                </ImageView>
+                                <Label id="pageTitle" text="Online Hotel Booking and Management System" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Monospaced Bold" size="30.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+               </content>
+            </Tab>
+
+         </tabs>
+      </TabPane>
+    </children>
+</VBox>

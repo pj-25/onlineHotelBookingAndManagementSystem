@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="viewPane" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ohbams.clientApplication.mainApp.res.layouts.customerView.ViewAndEditBooking">
+    <content>
+        <VBox fx:id="viewPaneChild" alignment="TOP_CENTER" spacing="10.0">
+            <children>
+                <Label fx:id="pageTitle" text="View And Edit Bookings">
+                    <font>
+                        <Font name="Monospaced Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <ImageView fitHeight="273.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/png/booking.png" />
+                    </image>
+                </ImageView>
+            <TableView fx:id="bookingInfoTable" onMouseClicked="#bookingInfoSelection" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn fx:id="column1" prefWidth="75.0" text="Booking Id" />
+                <TableColumn fx:id="column2" prefWidth="100.0" text="Booking On" />
+                  <TableColumn fx:id="column3" prefWidth="100.0" text="Status" />
+                  <TableColumn fx:id="column4" prefWidth="100.0" text="CheckIn On" />
+                  <TableColumn fx:id="column5" prefWidth="100.0" text="CheckOut On" />
+                  <TableColumn fx:id="column6" prefWidth="75.0" text="totalGuests" />
+                  <TableColumn fx:id="column7" prefWidth="100.0" text="Room Type" />
+                  <TableColumn fx:id="column8" prefWidth="75.0" text="Room Id" />
+              </columns>
+                <placeholder>
+                    <Label text="No Current Booking found" />
+                </placeholder>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="refreshBtn" defaultButton="true" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+                <Separator prefWidth="200.0" />
+            <Label text="**Select row from above table to edit" />
+            <VBox fx:id="editBookingPane" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Edit Booking">
+                     <font>
+                        <Font name="Monospaced Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <StackPane fx:id="bookingInputPane" prefHeight="150.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                     <children>
+                        <Button fx:id="cancelBtn" cancelButton="true" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cancelBooking" style="-fx-background-color: red;" text="Cancel Booking" textAlignment="CENTER" />
+                        <Button fx:id="changeBtn" mnemonicParsing="false" onAction="#changeBooking" text="Change Booking" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Separator layoutX="20.0" layoutY="608.0" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding></VBox>
+    </content>
+</ScrollPane>
