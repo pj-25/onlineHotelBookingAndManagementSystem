@@ -134,7 +134,7 @@ ohbams
 
 * External library: 
       
-      JDBC connector driver:  mysql-connector-java-8.0.25.jar (Will require to download and add)
+      JDBC connector driver:  mysql-connector-java-8.0.27.jar (Will require to download and add)
 
 * Add libraries: 
       
