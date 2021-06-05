@@ -126,9 +126,9 @@ ohbams
 
   * JDBC driver: ```mysql-connector-java-8.0.27``` (https://dev.mysql.com/downloads/connector/j/)
   
-#### IDE config:
+### IDE config:
 
-* IDE used: Intellij Idea
+* IDE used: ```Intellij Idea```
 
       Java version: 1.8.0_281 (JDK8)
 
@@ -141,20 +141,21 @@ ohbams
       File > Project Structure > library > + > Java > {select above connector jar file} 
 
 
-#### Server Config: 
+### Server Config: 
 ```
     Server package: ohbams.serverApplication
     Default server port number: 9292
     Server IP: localhost
 ```
 
-* Start Server: 	
-    Run Server (IDE)
+* Start Server:
+
+		Run Server (IDE)
 			
   _default port:9292 but can also pass server port as command line argument_
 
 
-#### Client/User config:
+### Client/User config:
 	 Client package: ohbams.clientApplication
 	
 * Start application:
