@@ -5,6 +5,8 @@ The project is to implement an Online hotel booking and management system using 
 * Project Name: Online Hotel Booking and Management System(ohbams)
 * Compatibility: JDK8 with JavaFX
 
+[Jump to JavaDocs--->](https://pj-25.github.io/onlineHotelBookingAndManagementSystem/docs/)
+
 ## Project Structure:
 
 ```javascript
