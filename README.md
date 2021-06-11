@@ -2,6 +2,11 @@
 The project is to implement an Online hotel booking and management system using Java which provides different functionalities for different users (like Regular customer, Corporate Client, Receptionist, Bar or Restaurant Staff) to efficiently book and manage rooms for hotel.
 
 
+![IDE](https://img.shields.io/badge/IDE-IntellijIDEA-blueviolet)
+![STATUS](https://img.shields.io/badge/Status-completed-success)
+
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pj-25/onlineHotelBookingAndManagementSystem?style=for-the-badge">
+
 * Project Name: Online Hotel Booking and Management System(ohbams)
 * Compatibility: JDK8 with JavaFX
 
