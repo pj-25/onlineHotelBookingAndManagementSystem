@@ -1,0 +1,16 @@
+ohbams.clientApplication
+ohbams.clientApplication.mainApp
+ohbams.clientApplication.mainApp.res.layouts
+ohbams.clientApplication.mainApp.res.layouts.components
+ohbams.clientApplication.mainApp.res.layouts.customerView
+ohbams.clientApplication.mainApp.res.layouts.customerView.corporateClientView
+ohbams.clientApplication.mainApp.res.layouts.staffView
+ohbams.clientApplication.mainApp.res.layouts.staffView.receptionistView
+ohbams.clientApplication.networkConnection
+ohbams.clientApplication.userAuthentication.controller
+ohbams.constData
+ohbams.entity
+ohbams.eventHandler
+ohbams.messageHandler
+ohbams.serverApplication
+ohbams.serverApplication.databaseHandler
