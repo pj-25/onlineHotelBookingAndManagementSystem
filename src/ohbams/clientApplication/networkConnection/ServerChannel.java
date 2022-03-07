@@ -15,7 +15,7 @@ public class ServerChannel {
     private MessageConsumer messageDecoder;
 
     public static final int SERVER_PORT = 9292;
-    public static final String SERVER_IP = "3.135.64.114"; //3.135.64.114
+    public static final String SERVER_IP = "127.0.0.1"; //3.135.64.114
 
     public ServerChannel(MessageConsumer messageDecoder) throws IOException{
         this(SERVER_IP, SERVER_PORT, messageDecoder);

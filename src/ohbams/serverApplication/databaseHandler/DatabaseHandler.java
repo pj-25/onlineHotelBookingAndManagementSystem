@@ -10,8 +10,8 @@ public class DatabaseHandler {
     protected PreparedStatement preparedStatement;
 
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/luton_hotel";
-    private static final String USERNAME = "luton@dmin";
-    private static final String PASSWORD = "@dgJMP25";
+    private static final String USERNAME = "luton@admin";
+    private static final String PASSWORD = "luton@admin";
 
     public DatabaseHandler() throws SQLException, ClassNotFoundException {
         this(DATABASE_URL, USERNAME, PASSWORD);
